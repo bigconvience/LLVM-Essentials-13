@@ -1,0 +1,31 @@
+To compile the program on linux, run the following command
+
+$ clang++ module.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ Global.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ function.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ funcArg.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ functionBlock.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ return.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ arith.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ ifelse.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ loop.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ arith.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
