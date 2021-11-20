@@ -16,5 +16,4 @@ toy
 *.ll
 *.out
 *.bc
-
-
+.vscode

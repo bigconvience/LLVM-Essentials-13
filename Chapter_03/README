@@ -1,0 +1,16 @@
+To compile the program on linux, run the following command
+
+$ clang++ gep.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ load.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ store.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ insert.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
+
+$ clang++ extract.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core` -fno-rtti -o toy
+$ ./toy
