@@ -29,3 +29,7 @@ cmake -G "Unix Makefiles" -DLLVM_TARGETS_TO_BUILD=X86 -DCMAKE_INSTALL_PREFIX=/us
 make 
 make install
 ```
+
+### opt
+-enable-new-pm=0
+[work pass](https://zhuanlan.zhihu.com/p/392381317)
