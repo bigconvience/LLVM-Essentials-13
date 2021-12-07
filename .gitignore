@@ -12,8 +12,6 @@ build
 .idea/
 *.class
 toy
-*.s
-*.ll
 *.out
 *.bc
 .vscode
