@@ -1,0 +1,19 @@
+# After Instruction Selection:
+# Machine code for function test: IsSSA, TracksLiveness
+Function Live Ins: $edi in %0, $esi in %1, $edx in %2
+
+bb.0 (%ir-block.0):
+  liveins: $edi, $esi, $edx
+  %2:gr32 = COPY $edx
+  %1:gr32 = COPY $esi
+  %0:gr32 = COPY $edi
+  %3:gr32 = nsw ADD32rr %0:gr32(tied-def 0), %1:gr32, implicit-def dead $eflags
+  $eax = COPY %3:gr32
+  CDQ implicit-def $eax, implicit-def $edx, implicit $eax
+  IDIV32r %2:gr32, implicit-def $eax, implicit-def dead $edx, implicit-def dead $eflags, implicit $eax, implicit $edx
+  %4:gr32 = COPY $eax
+  $eax = COPY %4:gr32
+  RET 0, $eax
+
+# End machine code for function test.
+
